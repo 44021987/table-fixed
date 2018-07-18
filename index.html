@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="tableFix.css">
+  <style>
+    /* 最外层必须有规定高度 */
+
+    .table-fixed-wrap {
+      height: 300px;
+    }
+    /* 表格默认宽度为100% */
+    .fixed-table-main {
+      width: 120%
+    }
+  </style>
+</head>
+
+<body>
+  <!-- demo 固定1列 -->
+  <div class="table-fixed-wrap" column=1>
+    <div class="table-fixed-box">
+      <table class="fixed-table-main">
+        <thead>
+          <tr>
+            <th width="100">order</th>
+            <th width="200">First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">4</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">5</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">6</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">7</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">8</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">9</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">10</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">11</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td scope="row">12</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- demo 固定2列 -->
+  <div class="table-fixed-wrap" column=2>
+    <div class="table-fixed-box">
+      <table class="fixed-table-main">
+        <thead>
+          <tr>
+            <th style="text-align: center; width: 80px" rowspan="3">姓名</th>
+            <th style="text-align: center; width: 80px" rowspan="3">班级</th>
+            <th style="text-align: center" colspan="10">成绩</th>
+          </tr>
+          <tr>
+            <th style="text-align: center" colspan="3">主科</th>
+            <th style="text-align: center" colspan="3">文科</th>
+            <th style="text-align: center" colspan="3">理科</th>
+            <th style="text-align: center; width: 80px" rowspan="2">总分</th>
+          </tr>
+          <tr>
+            <th style="text-align: center; width: 80px">语文</th>
+            <th style="text-align: center; width: 80px">数学</th>
+            <th style="text-align: center; width: 80px">英语</th>
+            <th style="text-align: center; width: 80px">政治</th>
+            <th style="text-align: center; width: 80px">历史</th>
+            <th style="text-align: center; width: 80px">地理</th>
+            <th style="text-align: center; width: 80px">物理</th>
+            <th style="text-align: center; width: 80px">化学</th>
+            <th style="text-align: center; width: 80px">生物</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 数据行 -->
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+          <tr>
+            <td>学生32</td>
+            <td>班级1</td>
+            <td>29</td>
+            <td>25</td>
+            <td>146</td>
+            <td>28</td>
+            <td>79</td>
+            <td>73</td>
+            <td>47</td>
+            <td>8</td>
+            <td>91</td>
+            <td>526</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="jq.js"></script>
+  <script src="tableFix.js"></script>
+  <script>
+    // 初始化
+    $('.table-fixed-wrap').fixedTable()
+  </script>
+</body>
+
+</html>
