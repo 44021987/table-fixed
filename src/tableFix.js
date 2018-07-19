@@ -8,6 +8,7 @@
     var isFirst = true,
         timer = null;
     return function () {
+      var _this = this;
       if (isFirst) {
         fn.apply(this, arguments)
         isFirst = !isFirst;
@@ -16,7 +17,7 @@
       if (timer) return
       timer = setTimeout(function () {
         clearTimeout(timer)
-        fn.apply(this, arguments)
+        fn.apply(_this, arguments)
         timer = null
       }, ms || 30)
     }
