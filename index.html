@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="src/tableFix.css">
   <style>
+    body {
+      padding: 10px 10%;
+    }
     /* 最外层必须有规定高度 */
 
     .table-fixed-wrap {
@@ -15,7 +17,7 @@
     }
     /* 表格默认宽度为100% */
     .fixed-table-main {
-      width: 120%
+      width: 100%
     }
   </style>
 </head>
@@ -24,7 +26,7 @@
   <!-- demo 固定1列 -->
   <div class="table-fixed-wrap" column=1>
     <div class="table-fixed-box">
-      <table class="fixed-table-main">
+      <table class="fixed-table-main" style="width: 120%">
         <thead>
           <tr>
             <th width="100">order</th>
@@ -34,30 +36,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td scope="row">3</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <td scope="row">4</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <td scope="row">5</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <td scope="row">6</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
           <tr>
             <td scope="row">7</td>
             <td>Larry</td>
@@ -357,9 +335,12 @@
     </div>
   </div>
   <script src="src/lib/jq.js"></script>
-  <script src="src/tableFix.js"></script>
+  <script src="tablefix.min.js"></script>
   <script>
-    // 初始化
+    /**
+     * 引入tablefix.min.js
+     * 初始化
+     */
     $('.table-fixed-wrap').fixedTable()
   </script>
 </body>

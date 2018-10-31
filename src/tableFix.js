@@ -50,6 +50,7 @@
       $fixedWrap.append($head)
       $fixedWrap.append($scrollHead)
       $fixedWrap.append($column)
+      $el.find('.fixed-body-wrap').remove()
       $el.append($fixedWrap)
     },
     createFixedScorllHead: function ($el) {
@@ -132,6 +133,13 @@
       var $fixedWrap = $(this).siblings('.fixed-body-wrap');
       var scrollTop = $(this).scrollTop();
       var scrollLeft = $(this).scrollLeft();
+      var scrollBar = $.fixedWraphasScrollBar($(this))
+      var heightScroll = scrollBar.heightScroll
+      var widthScroll = scrollBar.widthScroll
+      console.log($(this))
+      if (heightScroll) $(this).parent().addClass('is-scroll')
+      if (widthScroll) $(this).siblings('.fixed-body-wrap').find('.fixed-table-body').addClass('is-width-scroll')
+      if (!heightScroll && !widthScroll) $(this).parent().addClass('no-scroll')
       $fixedWrap.find('.fixed-table-head-scroll table').css('margin-left', -scrollLeft)
       $fixedWrap.find('.fixed-table-body table').css('margin-top', -scrollTop)
     },
